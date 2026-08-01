@@ -1,47 +1,26 @@
 # Smart Expense Tracker API
 
-A REST API built using FastAPI to manage personal expenses.
+A RESTful Expense Tracker API built with **FastAPI** to manage personal expenses. The API supports creating, retrieving, filtering, summarizing, and deleting expenses using JSON file storage.
 
 ## Features
 
-- Add Expense
-- View Expenses
-- Filter by Category
-- Calculate Total Expenses
-- Delete Expense
-- Swagger Documentation
-- Unit Tests
+- Add a new expense
+- View all expenses
+- Filter expenses by category
+- Calculate total expenses (overall and by category)
+- Delete an expense
+- Interactive Swagger/OpenAPI documentation
+- Automated unit tests using Pytest
 
 ## Tech Stack
 
-- Python
+- Python 3
 - FastAPI
+- Pydantic
 - Pytest
 - JSON File Storage
 
-## Installation
-
-```bash
-pip install -r requirements.txt
-```
-
-## Run Server
-
-```bash
-uvicorn src.main:app --reload
-```
-
-## Run Tests
-
-```bash
-pytest
-```
-
-## API Documentation
-
-http://127.0.0.1:8000/docs
-
-## Folder Structure
+## Project Structure
 
 ```
 smart-expense-tracker-api/
@@ -52,9 +31,62 @@ smart-expense-tracker-api/
 │── expenses.json
 │
 ├── src/
-├── tests/
+│   ├── main.py
+│   ├── schemas.py
+│   ├── storage.py
+│   ├── utils.py
+│   └── __init__.py
+│
+└── tests/
+    ├── __init__.py
+    └── test_api.py
+```
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Pramodh8088/smart-expense-tracker-api.git
+cd smart-expense-tracker-api
+```
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Run the Server
+
+```bash
+uvicorn src.main:app --reload
+```
+
+The API will be available at:
+
+```
+http://127.0.0.1:8000
+```
+
+## API Documentation
+
+Interactive Swagger UI:
+
+```
+http://127.0.0.1:8000/docs
+```
+
+## Run the Tests
+
+```bash
+pytest
 ```
 
 ## Sample Data
 
-The project includes sample expense records in `expenses.json` to make it easy to test the API immediately. You can edit or clear this file if you want to start with an empty dataset.
+The project includes sample expense records in `expenses.json` to make testing easier. You can edit or clear the file if you want to start with an empty dataset.
+
+## Author
+
+**Pramodh HS**

@@ -7,27 +7,22 @@
 ## AI-Assisted Work
 
 - Generated the initial FastAPI project structure.
-- Helped create CRUD endpoint boilerplate.
-- Suggested the pytest structure.
+- Assisted with CRUD endpoint boilerplate.
+- Suggested unit test templates.
+- Helped improve project documentation.
 
-## Changes I Made
+## Changes and Validation
 
 - Implemented automatic ID generation.
 - Added category filtering.
 - Added total expense calculation.
-- Added delete functionality with 404 handling.
-- Fixed JSON serialization for Python date objects using `default=str`.
-- Improved Swagger documentation with tags and status codes.
-
-## Validation
-
-- Manually tested all endpoints using Swagger UI.
-- Wrote and executed automated tests using pytest.
-- Verified JSON file persistence across operations.
+- Added delete functionality with proper error handling.
+- Fixed JSON serialization for Python `date` objects.
+- Verified all endpoints using Swagger UI.
+- Wrote and executed automated tests using Pytest.
 
 ## AI Suggestions Not Used
 
-- SQLite database implementation.
+**Suggestion:** Use SQLite as the database.
 
-Reason:
-The assignment explicitly allowed JSON file storage, so I chose a lightweight JSON-based implementation.
+**Reason:** The assignment explicitly allowed JSON file storage, so I kept the implementation lightweight using `expenses.json`.
