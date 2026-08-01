@@ -54,3 +54,7 @@ smart-expense-tracker-api/
 ├── src/
 ├── tests/
 ```
+
+## Sample Data
+
+The project includes sample expense records in `expenses.json` to make it easy to test the API immediately. You can edit or clear this file if you want to start with an empty dataset.
